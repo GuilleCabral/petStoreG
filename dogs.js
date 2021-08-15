@@ -4,6 +4,17 @@ function playclip() {
     audio.play();
   }
 
+/*get info when submit from contact page*/
+function getInfo(){
+var messageInfo = ['name','email','subject','message'];
+var name = document.getElementById("Name").value;
+var email = document.getElementById("Email").value;
+var subject = document.getElementById("Subject").value;
+var message = document.getElementById("Message").value;
+
+alert("Name: " +name+ '\n' + "Email: " +email+ '\n' + "Subject: " +subject+ '\n' + "Message: "+message);
+}
+
 /*Product's pictures*/
   var more = [
     {

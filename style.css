@@ -1,47 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("./bckImg.jpg");
+  background-image: url("./pics/bckImg.jpg");
   background-size: 150em;
   overflow-x: hidden; /*hide horizontal scroll bar*/
 }
 .navbar-nav{
   font-size: 1.2em;
-
-}
-#intro {
-  margin-top: 4em;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  border: 3px solid;
-  box-shadow: 0 0 1em 0.5em rgb(10, 10, 10);
-  cursor: url("./pics/hand.png"), auto; /*https://icons8.com/*/
-  text-align: center;
-}
-#hoverImg {
-  text-align: center;
-  font-size: 10vw;
-  font-family: "Miama";
-  text-shadow: 4px 4px 4px #aaa;
-}
-.container {
-  display: inline;
-}
-#mainText {
-  margin: 5em;
-  padding: 4em;
-  font-size: 1.5em;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 10px rgb(255, 255, 255);
-  background-image: url("https://images.unsplash.com/photo-1612957898772-27ce1724e5dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80");
-  background-position: center center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 0 15px hsl(0, 0%, 55%), 0 0 0 25px hsl(0, 0%, 65%),
-    0 0 0 30px hsl(0, 0%, 75%), 0 0 0 35px hsl(0, 0%, 90%); /*border style*/
 }
 /*Footer*/
 .footer {
@@ -79,38 +43,65 @@ body {
   width: 20%;
   padding: 10px;
 }
-
 .card-deck {
   margin-left: 50px;
-  margin-right: 50px;
 }
 
-/*pets pages*/
-#market {
-  display: inline-flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+                  /*home page*/
+
+#intro {
   margin-top: 4em;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 3px solid;
+  box-shadow: 0 0 1em 0.5em rgb(10, 10, 10);
+  cursor: url("./pics/hand.png"), auto; /*https://icons8.com/*/
+  text-align: center;
 }
-#market img {
-  height: 12em;
-  border: 2px solid #555;
-  margin: 6px;
+#hoverImg {
+  text-align: center;
+  font-size: 10vw;
+  font-family: "Miama";
+  text-shadow: 4px 4px 4px #aaa;
 }
-#dogs, #cats{
-  display: inline-flex;
+.container {
+  display: inline;
+}
+#mainText {
+  margin: 5em;
+  padding: 4em;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 10px rgb(255, 255, 255);
+  background-image: url("https://images.unsplash.com/photo-1612957898772-27ce1724e5dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 15px hsl(0, 0%, 55%), 0 0 0 25px hsl(0, 0%, 65%),
+    0 0 0 30px hsl(0, 0%, 75%), 0 0 0 35px hsl(0, 0%, 90%); /*border style*/
+}
+
+                  /*pets pages*/
+
+#dogs, #cats, #birds, #bunnies{
+  display:flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
-#dogs img, #cats img{
+#dogs img, #cats img, #birds img, #bunnies img{
   height: 12em;
   border: 2px solid #555;
   margin: 6px;
 }
-#dogsTitle, #catsTitle {
+#title{
   text-align: center;
   font-family: "Miama";
   font-size: 6em;
@@ -127,11 +118,14 @@ body {
 }
 .btn {
   margin-bottom: 2em;
+  border: 0.1em solid #000000;
+}
+.btn-primary{
+  display: flex;
 }
 
-/*about page*/
-.container {
-}
+                  /*about page*/
+
 #boxed {
   max-width: 100%;
   padding: 20px;
@@ -153,9 +147,37 @@ body {
 }
 #ceoPic {
   width: 30em;
-  height: auto;
-  width: 300px;
   max-width: 100%;
-  height: auto;
   border-style: groove;
+}
+.ceoContainer{
+  margin-top: 30em;
+}
+
+                /*contact page*/
+
+#contactBox {
+  text-align: center;
+}
+#emailCont, #subjectCont, #messageCont, #submit{
+  margin-top: 20px;
+}
+/*text box*/
+#Name, #Email, #Subject{
+  height:2em;
+  width: 30vw;
+  font-size:14pt;
+  background-color: rgb(231, 231, 231);
+}
+#Message{
+  height:8em;
+  width: 60vw;
+  font-size:14pt;
+  background-color: rgb(231, 231, 231);
+}
+#boxes{
+  margin-left: 9em;
+}
+p{
+  text-align: left;
 }
